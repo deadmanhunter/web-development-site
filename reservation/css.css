@@ -1,0 +1,30 @@
+body {
+background-image:url("sleepingdragon.jpg");
+background-color:#000000;
+background-width:100%;
+}
+
+div.header {
+  color: white;
+  width: 404;
+  position: relatve;
+  font-size: 15pt;
+  top: 17;
+  left: 127;
+  padding-left: 15;
+}
+
+
+table,th,td
+{
+	background-color: #111111;
+	outline-width: 2;
+	border: dotted;
+	border-color: gray;
+	padding: 4;
+	border-collapse: separate;
+}
+div.nav {
+  position: relative;
+
+}
