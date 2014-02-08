@@ -1,29 +1,41 @@
-web-development-site
-====================
-Dragon Air Design
+[jQuery Validation Plugin](http://bassistance.de/jquery-plugins/jquery-plugin-validation/) - Form validation made easy
+================================
 
-Background
-The land of Berk faces a terrible winter, the likes of which has never been seen. We haven’t been able to secure enough food on our own to ensure our survival, so we must rely on our greatest commodity in the shadow of the storm, our dragons. They are our friends and companions, and by creating Dragon Air, we can raise enough to fill our halls and our bellies for the coming winter. We provide the fastest transit, the most security, and the trip of a lifetime for anyone brave enough to take to the skies on the back of a dragon.
+[![Build Status](https://secure.travis-ci.org/jzaefferer/jquery-validation.png)](http://travis-ci.org/jzaefferer/jquery-validation)
 
-Users
-Back End
-Our team of Dragon Trainers are the finest (and only) on Midguard. The have trained the dragons to fly fast and easy. Only the most intelligent dragons are selected for this task, and only the brightest riders will accompany you on your journey to your destination.
-Front end
-Front end users can reserve any of our dragons available for a ride, and choose any of our riders to accompany them on their journey. 
-We take in transportation and security requests from merchants, families, and even villages. We have a dragon for all occasions. 
-This endeavor will start off with 6 dragons, 5 riders, and 3 destinations.
+The jQuery Validation Plugin provides drop-in validation for your existing forms, while making all kinds of customizations to fit your application really easy.
 
-Use Cases
-Security – Sailing near the dreaded Outcast Isles? Book a security detail to and from the Island, to ensure the safety of you and your goods.
-Transit – Have family up north? Take a dragon to shave off a few weeks of sailing on the high seas, and impress your family by showing up on a flying fire-breathing reptile.
+## [Help the project](http://pledgie.com/campaigns/18159)
 
-Functional Requirements
-Riders need a valid email address, and must be able to read and write. The dragon does all navigation, so you won’t need a map
+[![Help the project](http://www.pledgie.com/campaigns/18159.png?skin_name=chrome)](http://pledgie.com/campaigns/18159)
 
-Non functional requirements
-Dragons cannot fly overburdened, the dragons will have a weight limit listed on their page, you must keep track of what you are carrying, and request a dragon that satisfies your needs.
+This project is looking for help! [You can donate to the ongoing pledgie campaign](http://pledgie.com/campaigns/18159)
+and help spread the word. If you've used the plugin, or plan to use, consider a donation - any amount will help.
 
-Design Specs
-Content needs – We will need to know the number of people travelling, the expected weight of your group, and if you have been cursed by any of the gods (for liability reasons).
-Media needs – If you look to your left or right in flight, you will usually see a beautiful sun rising above or sinking below the clouds, or a fantastic night sky (our dragons fly above the clouds).
-External links – Contact your local weather witch for forecasts.
+You can find the plan for how to spend the money on the [pledgie page](http://pledgie.com/campaigns/18159).
+
+## Getting Started
+
+Include jQuery and the plugin on a page. Then select a form to validate and call the `validate` method.
+
+```html
+<form>
+	<input required>
+</form>
+<script src="jquery.js"></script>
+<script src="jquery.validation.js"></script>
+<script>
+$("form").validate();
+</script>
+```
+
+For more information on how to setup a rules and customizations, [check the documentation](http://docs.jquery.com/Plugins/Validation).
+
+## Contributing
+Follow the [jQuery style guide](http://contribute.jquery.com/style-guides/js), even if existing code doesn't. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+If you've wrote custom methods that you'd like to contribute to additional-methods.js, create a branch, add the method there and send a pull request for that branch.
+
+## License
+Copyright (c) 2013 Jörn Zaefferer
+Licensed under the MIT license.

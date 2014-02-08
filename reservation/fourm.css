@@ -1,0 +1,11 @@
+
+
+#wrap {
+
+	background-color: #111111;
+	outline-width: 2;
+	border: dotted;
+	border-color: gray;
+	padding: 4;
+	border-collapse: separate;
+}

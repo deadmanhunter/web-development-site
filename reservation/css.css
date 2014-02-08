@@ -1,17 +1,16 @@
 body {
-background-image:url("sleepingdragon.jpg");
-background-color:#000000;
-background-width:100%;
+  background-image:url("sleepingdragon.jpg");
+  background-color:#000000;
 }
 
 div.header {
   color: white;
   width: 404;
-  position: relatve;
+  position: relative;
   font-size: 15pt;
-  top: 17;
-  left: 127;
-  padding-left: 15;
+  top: 17px;
+  left: 127px;
+  padding-left: 15px;
 }
 
 h2 {
@@ -25,15 +24,25 @@ h2 {
   padding-left: 15;
 }
 
+h3 {
+  font-family: "Times New Roman",Georgia,Serif;
+  color: white;
+  width: 404;
+  position: relatve;
+  font-size: 17pt;
+  top: 17;
+  left: 50;
+  padding-left: 15;
+}
+
 
 table,th,td
 {
-	background-color: #111111;
 	outline-width: 2;
 	border: dotted;
 	border-color: gray;
-	padding: 4;
-	border-collapse: separate;
+	padding: 5;
+	color: white;
 }
 
 div.nav {
@@ -42,3 +51,62 @@ div.nav {
 
 }
 
+#wrap {
+  background: #eaf0f4;
+  border: 5px solid #7a91a1;
+  margin: auto;
+  width: 500px;
+}
+ 
+form {
+  padding: 0;
+  margin: 0 0 20px;
+}
+table {
+  margin: 0 auto;
+}
+
+.error[generated=true] {
+  color: #dc0000;
+  font-size: 16px;
+  padding: 5px 0 2px 5px;
+}
+tr.error td {
+  padding: 0;
+}
+input, textarea {
+  background: #FFF;
+  border: 3px solid #7a91a1;
+  font: inherit;
+  font-size: 16px;
+  line-height: 29px;
+  min-height: 30px;
+  padding: 5px 10px;
+  width: 300px;
+}
+input:focus, textarea:focus {
+  border-color: #b0c3d0;
+  outline: none;
+}
+textarea {
+  height: 240px;
+  resize: vertical;
+}
+input[type=submit] {
+  background: #24333d;
+  color: #FFF;
+  font: inherit;
+  padding: 7px 20px;
+  width: auto;
+}
+ 
+#response {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#response .success {
+  color: #08a300;
+}
+#response .failure {
+  color: #dc0000;
+}

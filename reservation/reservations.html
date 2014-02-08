@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Dragon Air Ride - Reserve your Dragon</title>
-	<link rel="stylesheet" href="css.css"> 
-</head>
+  <head>
+  	<title>Dragon Air Ride - Reserve your Dragon</title>
+  	<link rel="stylesheet" href="css.css"> 
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../js/jqueryfourm.js"></script>
+    <script type="text/javascript" src="../js/contactinfo.js"></script>
+  </head>
 
-<body>
+  <body>
 
-<div class="header">
-<h1>Dragon Air Transit - Reservations</h1>
-</div>
+  <div class="header">
+    <h1>Dragon Air Transit - Reservations</h1>
+  </div>
 
-<br></br>
+  <br></br>
 
-<div class="nav">
-<table>
-  <tr>
-    <td><a href="index.html">Berk</a></td>
-    <td><a href="reservations.html">Reservations</a></td>
-    <td><a href="dragons.html">Dragons</a></td>
-    <td><a href="destinations.html">Destinations</a></td>
-    <td><a href="riders.html">Riders</a></td>
-    <td><a href="contact.html">Customer Service</a></td>
-    <td><a href="credits.html">Credits</a></td>
-  <tr>
-</table>
-</div>
+  <div class="nav">
+    <table align="center">
+      <tr>
+        <td><a href="index.html">Berk</a></td>
+        <td><a href="reservations.html">Reservations</a></td>
+        <td><a href="dragons.html">Dragons</a></td>
+        <td><a href="riders.html">Riders</a></td>
+        <td><a href="contact.html">Customer Service</a></td>
+        <td><a href="credits.html">Credits</a></td>
+      <tr>
+    </table>
+  </div>
 
-</body>
+    <div id="wrapper">
+      <form id="contactform" action="return.php" method="post">
+        <table align="center">
+
+        <tr>
+          <td><label for="rider">Enter desired riders name here:</label></td>
+          <td><input type="text" id="rider" name="rider" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="dragon">Enter desired dragons name here:</label></td>
+          <td><input type="text" id="dragon" name="dragon" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Contact us!" /></td>
+        </tr>
+
+      </table>
+    <div id="response"></div>
+
+  </div>
+
+
+
+
+  </body>
 </html>
