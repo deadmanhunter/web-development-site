@@ -30,11 +30,9 @@
 
   <h3>Is this information correct?</h3>
 
-  <h2>Your name is: <?php echo $_POST["name"]; ?> <br>
-  Your email is: <?php echo $_POST["email"]; ?> <br>
+
   Your desired rider is: <?php echo $_POST["rider"]; ?> <br>
   Your desired dragon is: <?php echo $_POST["dragon"]; ?> <br>
-  Your questions and/or comments: <?php echo $_POST["message"]; ?> <br></h2>
 
 
 

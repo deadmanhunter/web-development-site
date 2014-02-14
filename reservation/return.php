@@ -33,7 +33,7 @@
     <h2>Your desired dragon is: <?php echo $_POST["dragon"]; ?></h2> </br>
     <h2>Your questions and/or comments: <?php echo $_POST["message"]; ?></h2> </br>
     
-
+    <?php mail($_POST["email"], "Berk Dragon Air Customer Support", "Hello ".$_POST["name"].", we just wanted to verify that you sent us the following message:\n\n".$_POST["message"]."\n\nAnd that you are looking for ".$_POST["rider"]." as your rider, and a ".$_POST["dragon"]." as your dragon." ) ?>
 
 
   </body>
