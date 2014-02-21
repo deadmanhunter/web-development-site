@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dragon Air Ride - Customer Services</title>
+	<title>Dragon Air Ride - Reservation</title>
 	<link rel="stylesheet" href="css.css"> 
     <script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
     <script type="text/javascript" src="../js/dist/jquery.validate.min.js"></script>
     <script type="text/javascript" src="../js/jqueryfourm.js"></script>
     <script type="text/javascript" src="../js/contactinfo.js"></script>
+
 </head>
 
 
 <body>
 
   <div class="header">
-  <h1>Dragon Air Transit - Contact Us</h1>
+  <h1>Dragon Air Transit - Reservation</h1>
   </div>
 
   <br>
@@ -22,17 +23,16 @@
   <table align="center">
     <tr>
       <td><a href="index.html">Berk</a></td>
-      <td><a href="reservations.html">Reservations</a></td>
+      <td><a href="reservation.html">Reservations</a></td>
       <td><a href="dragons.html">Dragons</a></td>
       <td><a href="riders.html">Riders</a></td>
-      <td><a href="contact.html">Customer Service</a></td>
       <td><a href="credits.html">Credits</a></td>
     <tr>
   </table>
   </div>
 
     <div id="wrapper">
-      <form id="contactform" action="return.php" method="post">
+      <form id="contactform" action="reservationreturn.php" method="post">
         <table align="center">
 
           <tr>
@@ -54,12 +54,20 @@
             <td><label for="dragon">Enter desired dragons name here:</label></td>
             <td><input type="text" id="dragon" name="dragon" /></td>
           </tr>
+          <tr>
+            <td><label for="startdate">Please enter the desired start date YYYY-MM-DD:</label></td>
+            <td><input type="text" id="startdate" name="startdate"></td>
+          </tr>
+          <tr>
+            <td><label for="enddate">Please enter the desired end date YYYY-MM-DD:</label></td>
+            <td><input type="text" id="enddate" name="enddate"></td>
+          </tr>   
+
 
           <tr>
             <td><label for="message">Comments or questions?</label></td>
             <td><textarea id="message" name="message" rows="4" cols="20"></textarea></td>
           </tr>
-
           <tr>
             <td></td>
             <td><input type="submit" value="Contact us!" /></td>
